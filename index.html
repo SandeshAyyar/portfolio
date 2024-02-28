@@ -410,6 +410,7 @@
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
 <script type="text/javascript" src="js/init.js?ver=4"></script>
 <script>
+	()=>{
       var birthdate = 18-04-2002;
       var today = new Date();
       var age = today.getFullYear() - birthdate.getFullYear();
@@ -418,6 +419,7 @@
         age--;
       }
       document.getElementById("result").innerHTML = "Your age is: " + age;
+	}
   </script>
 <!-- /Scripts -->
 <style>
