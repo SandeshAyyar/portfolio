@@ -409,6 +409,16 @@
 <script type="text/javascript" src="js/waypoints.js?ver=4"></script>
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
 <script type="text/javascript" src="js/init.js?ver=4"></script>
+<script>
+      var birthdate = 18-04-2002;
+      var today = new Date();
+      var age = today.getFullYear() - birthdate.getFullYear();
+      var m = today.getMonth() - birthdate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthdate.getDate())) {
+        age--;
+      }
+      document.getElementById("result").innerHTML = "Your age is: " + age;
+  </script>
 <!-- /Scripts -->
 <style>
 #kn{
